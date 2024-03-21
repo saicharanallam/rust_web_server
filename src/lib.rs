@@ -35,7 +35,6 @@ impl ThreadPool{
         self.sender.send(job).unwrap();
     }
 }
-
 struct Worker {
     id: usize,
     thread: thread::JoinHandle<()>
